@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="resonanceApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Hello Resonance</title>
+<script src="../lib/angular.min.js"></script>
+<script src="../lib/angular-route.min.js"></script>
+<script src="../lib/angular-ui-router.js"></script>
+<script src="../app/app.js"></script>
+<script src="../app/aboutControllers.js"></script>
+<script src="../lib/d3.v3.min.js"></script>
+<script src="../app/horizControllers.js"></script>
+<script src="../app/graph.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/main.css" />
+</head>
+
+<body>
+
+	<div ng-controller="MainController">
+		<div id="nav" class="clearfix" style="background: lightslategray;">
+			<ul id="nav-primary" class="left">
+
+				<li id="nav-home" style="list-style-type: none">
+					<div>
+						<a href="/" class="active">Home</a>
+					</div>
+				</li>
+				<li id="nav-href" class="active" style="list-style-type: none">
+					<div>
+						<a href="#/Horiz">Horizontal</a>
+					</div>
+				</li>
+
+				<li id="nav-about" class="active" style="list-style-type: none">
+					<div>
+						<a href="#/Graph">Graph</a>
+					</div>
+				</li>
+				<li id="nav-about" class="active" style="list-style-type: none">
+					<div>
+						<a href="#/About">About</a>
+					</div>
+				</li>
+
+			</ul>
+			<ul id="nav-secondary" class="right">
+
+				<li id="nav-abs-home"
+					style="list-style-type: none; padding-right: 15px;">
+					<div>
+						<a href="http://google.com/" target="_blank">EIM</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div ng-view></div>
+	</div>
+
+</body>
+</html>
